@@ -1,0 +1,5 @@
+id_disciplinas, nome, ementa
+4, quimica,transformacoes e processos quimicos
+5,historia,acontecimentos do passado e do futuro
+6,geoggrafia,geopolitica e cartografia
+7 biologia,corpo humano e taxonomia

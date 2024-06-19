@@ -1,0 +1,23 @@
+As etapas de levantamento e elicitacao são fundamentais por vários motivos, e podemos destacar alguns deles:
+
+Podemos identificar os requisitos funcionais e não funcionais. Os requisitos funcionais são os que o usuário detecta e acha importante para o sistema, e o não funcional é o que todo sistema tem que ter como desempenho, usabilidade, confiabilidade, segurança, disponibilidade, manutenibilidade entre outros. Podemos dizer que o requisitos funcionais é o que o sistema tem que fazer, e o requisitos não funcionais é como o sistema tem que operar.
+
+Compreender as necessidades do cliente e do stakeholder é crucial. É importante que o sistema ou produto esteja alinhado e desenvolvido de forma a atender as necessidades e expectativas dos stakeholders. Sem uma compreensão clara dessas necessidades, o projeto pode resultar em um produto que não satisfaz o cliente final. Por isso, é fundamental escolher adequadamente a pessoa que irá desempenhar o papel de stakeholder.
+
+Para ajudar, existem técnicas para auxiliar no levantamento de requisitos, e duas delas são:
+
+Entrevista: Importância e Vantagens na Extração de Informações dos Usuários
+A entrevista é uma técnica essencial para levantar com clareza os requisitos que o sistema precisará para funcionar, pois permite que analistas obtenham informações diretamente dos usuários e stakeholders. Este contato direto possibilita a obtenção de informações estruturadas ou não estruturadas, dependendo da formalidade e complexidade das informações que são obtidas.
+
+A principal vantagem da entrevista é a oportunidade de entender profundamente as necessidades dos usuários. Essa técnica é especialmente adequada quando é necessário um entendimento mais detalhado e quando é preciso ter uma conversa direta para tirar as dúvidas e obter informações específicas.
+
+Para garantir que a entrevista tenha um otimo resultado, é bom se preparar de forma adequada. Isso inclui a preparação do roteiro, agendamento e condução da entrevista. Durante a entrevista, é importante estar preparado para minerar o máximo de informações possíveis, utilizando perguntas abertas que incentivem o entrevistado a compartilhar suas necessidades, expectativas e possíveis problemas com os sistemas atuais.
+
+A entrevista é uma excelente técnica a ser usada no início do levantamento de requisitos. Ela proporciona uma compreensão profunda das necessidades dos usuários e estabelece uma base sólida para o desenvolvimento do sistema, garantindo que as expectativas e exigências sejam claramente compreendidas e documentadas.
+
+Brainstorming: Seleção e Dinâmica de Participantes
+O brainstorming é uma técnica eficaz para a geração de ideias e resolução de problemas, e sua eficácia pode ser maximizada através da seleção cuidadosa dos participantes e da facilitação adequada da dinâmica.
+
+A seleção dos participantes deve considerar a diversidade e o conhecimento sobre o assunto em questão. Um ambiente positivo e incentivador é essencial para estimular uma ampla gama de ideias. Durante a dinâmica, é importante evitar críticas e julgamentos, promovendo um ambiente colaborativo onde todas as ideias são bem-vindas. Após a geração de ideias, é necessário realizar uma análise e filtragem para selecionar as melhores e adaptá-las ao sistema.
+
+O brainstorming, quando bem conduzido, é uma ferramenta poderosa para a elicitação de requisitos. A seleção de participantes diversificados e bem informados, combinada com um ambiente positivo e colaborativo, promove a geração de ideias criativas e inovadoras.

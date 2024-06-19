@@ -1,0 +1,18 @@
+Estutura WHILE de repeticao funciona ate que a condicao se torne falsa
+while(i < 100){
+i+=10
+}
+enquanto i for menor que 100 ira repetir 
+
+
+do while executa pelo menos uma vez o codigo, mesmo a condicao sendo falsa,
+i = 3
+do{
+i--
+}while(i > 0)
+
+Ja esse bloco ira repetir pelo menos uma vez
+i = 3
+do{
+i--
+}while(i < 0)

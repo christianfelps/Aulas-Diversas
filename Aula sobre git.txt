@@ -1,0 +1,19 @@
+git diff, da para ver as alteracoes no codigo 
+
+git diff --staged, para ver os arquivos modificados na area de staged
+
+git log, traz o historico dos commits feitos
+
+git log --oneline --decorate, nos indica uma serie de commit e em qual branch voce esta
+
+git restore, remove a modificacao no git add, use antes do git commit
+
+git restore --staged .\nomedoarquivo, remove da area de staged
+
+git commit serve para salvar o estado atual do codigo e serve como backup
+
+git checkout and switch, para trocar de branch
+
+git branch nomedabranch and git checkout -b nomedabranch, para criar uma nova branch
+
+

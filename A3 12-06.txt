@@ -1,0 +1,10 @@
+
+Quando estamos projetando sistemas, usamos principalmente duas formas de modelagem: modelagem de classes e modelagem de bancos de dados relacionais.
+
+Modelagem de Classes (UML): É uma maneira de entender os elementos que existem em um sistema e como eles se relacionam. Utilizamos diagramas de classes para representar esses elementos, mostrando suas características e interconexões. Isso nos ajuda a ter uma ideia geral do sistema, sem nos preocuparmos muito com os detalhes técnicos de sua implementação.
+
+Modelagem de Bancos de Dados Relacionais: É mais sobre como armazenamos e organizamos os dados do sistema. Pensamos neles como se estivessem em tabelas, onde cada tabela representa uma entidade (como um usuário ou um produto) e as colunas são os atributos dessa entidade (como nome ou preço). Também consideramos como essas entidades se relacionam umas com as outras usando chaves estrangeiras.
+
+Relação entre Modelagem de Classes e Bancos de Dados Relacionais: Embora essas duas formas de modelagem pareçam diferentes, elas estão conectadas. Podemos usar os diagramas de classes para ajudar a planejar a estrutura do banco de dados. Por exemplo, uma classe na UML pode se tornar uma tabela no banco de dados, e os atributos que definimos em uma classe se tornam as colunas dessa tabela. Também podemos usar as relações entre classes para ajudar a definir como as tabelas se relacionam entre si no banco de dados.
+
+Então, mesmo que sejam diferentes, a modelagem de classes e a modelagem de bancos de dados trabalham juntas para nos dar uma ideia completa de como será nosso sistema.

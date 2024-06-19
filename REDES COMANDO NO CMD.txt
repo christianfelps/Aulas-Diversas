@@ -1,0 +1,15 @@
+comando no cmd
+
+ipconfig, para abrir as config de seu ip
+ipconfig /flushdns, para limpar o cache de seu dns
+
+ping nomesite.com, para enviar pacotes
+
+nslookup, verifica o dns para ver em qual servidor chegar
+
+tracert nomesite, para ver quantos pulos ate chegar no site
+
+route print, tabela que mapeia as rotas
+
+netstat, ve quais portas esta em uso na sua maquina
+
