@@ -1,0 +1,30 @@
+main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   align-items: center;
+   gap: 2rem;
+   width: 100vw;
+   height: 100vh;
+}
+.inpVal{
+    width: 19.5%;
+    height: 5% ;
+    border: none;
+    text-align: center;
+}
+
+.btn-validar{
+    width: 20%;
+    height: 5%;
+    border: none;
+    border-radius: 18px;
+    background-color: aquamarine;
+    
+}
+.btn-validar:hover{
+    background-color: rgb(70, 199, 154);
+    font-size: 30px;
+    
+}
+

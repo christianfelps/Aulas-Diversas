@@ -1,0 +1,40 @@
+body{width: 100vw;
+    margin-top: 20%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #f1f1f1;
+    text-align: start;
+    
+}
+#relogio{
+    width: 40%;
+    background-color: white;
+    border-radius: 18px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+}
+.botaos{
+    display: flex;
+    gap: 6px;
+
+}
+.iniciar{
+    border-radius: 10px;
+    width: 120px;
+}
+.pausar{
+    border-radius: 10px;
+    width: 120px;
+}
+.zerar{
+    border-radius: 10px;
+    width: 120px;
+}
+.pausado{
+    color: red
+}

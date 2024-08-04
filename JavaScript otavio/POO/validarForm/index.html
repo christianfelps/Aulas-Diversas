@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="/" method="post" class="formulario">
+        
+        <h1>Formulario de cadastro</h1>
+        <ul>
+            <li>Nenhum campo pode estar vazio</li>
+            <li>Usuario so podera conter letras e/ou numeros</li>
+            <li>Usuario devera ter entre 3 e 12 caracteres</li>
+            <li>Senha precisa ter entre 6 e 12 caracteres</li>
+        </ul>
+
+        <label for="">Nome:</label>
+        <input type="text" placeholder="Digite seu nome" class="nome validar">
+
+        <label for="">Sobrenome:</label>
+        <input type="text" placeholder="Digite seu sobrenome" class="sobrenome validar">
+
+        <label for="">CPF:</label>
+        <input type="text" placeholder="Digite seu CPF" class="cpf validar">
+
+        <label for="">Usuario:</label>
+        <input type="text" minlength="3" maxlength="12" placeholder="Digite seu Usuario" class="usuario validar">
+
+        <label for="">Senha:</label>
+        <input type="password" minlength="6" maxlength="12" placeholder="Digite sua Senha" class="senha validar">
+
+        <label for="">Confirmar Senha:</label>
+        <input type="password" minlength="6" maxlength="12" placeholder="Digite sua Senha" class="confirma validar">
+    
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <script src="script.js"></script>
+    <script src="validarCPF.js"></script>
+
+</body>
+</html>

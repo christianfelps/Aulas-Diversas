@@ -1,0 +1,2 @@
+Pegar o cpf
+Fazer a conta com os 9 numeros, multiplicar cada numero pela sequencia de 10 --

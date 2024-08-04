@@ -1,0 +1,51 @@
+# Node.js
+
+# Diretórios e arquivos de build
+node_modules/
+dist/
+build/
+
+# Logs
+logs/
+*.log
+
+# Dependências instaladas pelo Yarn
+.yarn-integrity
+.yarn/
+
+# Arquivos de ambiente
+.env
+
+# Java
+
+# Diretórios de compilação
+bin/
+target/
+
+# Arquivos de compilação
+*.class
+
+# Dependências
+*.jar
+*.war
+
+# Arquivos de configuração
+*.env
+*.log
+
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+
+# Visual Studio Code
+.vscode/
+
+# Sistemas operacionais
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

@@ -1,0 +1,55 @@
+
+ 1. Declaração de Função (Function Hoisting)
+- Explicação: Funções declaradas dessa maneira são "elevadas" (hoisted) ao topo do escopo, permitindo que sejam chamadas antes de sua definição no código.
+- Exemplo:
+  javascript
+  function falaOi(){
+      console.log('oie');
+  }
+  falaOi(); // Pode ser chamada antes de sua definição
+
+ 2. Funções como Objetos de Primeira Classe (First-Class Objects)
+- Explicação: Em JavaScript, funções são tratadas como objetos de primeira classe, o que significa que podem ser atribuídas a variáveis, passadas como argumentos e retornadas por outras funções.
+- Exemplo:
+  javascript
+  const souUmDado = function (){
+      console.log('sou um dado');
+  };
+
+ 3. Expressão de Função (Function Expression)
+- Explicação: Uma função atribuída a uma variável. Diferente das declarações de função, as expressões de função não são elevadas (hoisted).
+- Exemplo:
+  javascript
+  const souUmDado = function (){
+      console.log('sou um dado');
+  };
+
+ 4. Executar Função Passada como Argumento
+- Explicação: Mostra como passar uma função como argumento para outra função e executá-la.
+- Exemplo:
+  javascript
+  function executaFuncao(funcao){
+      funcao();
+  }
+  executaFuncao(souUmDado); // Passa a função souUmDado como argumento e a executa
+
+ 5. Função de Setas (Arrow Function)
+- Explicação: Sintaxe concisa para escrever funções. As arrow functions não têm seu próprio `this` ou `arguments`.
+- Exemplo:
+  javascript
+  const functionArrow = () => {
+      console.log('sou uma arrow function');
+  };
+  functionArrow();
+
+ 6. Função dentro de um Objeto
+- Explicação: Definição de métodos dentro de objetos.
+- Exemplo:
+  javascript
+  const obj = {
+      falar: function() {
+          console.log('estou falando');
+      }
+  };
+  obj.falar(); // Chamando o método falar do objeto obj
+

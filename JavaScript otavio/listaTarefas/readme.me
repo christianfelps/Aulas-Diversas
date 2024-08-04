@@ -1,0 +1,176 @@
+
+1. Selecionar Elementos do DOM
+ Função `tag`: 
+  function tag(tag){
+      let ele = document.querySelector(tag);
+      if(!ele){
+          return null;
+      }
+      return ele;
+  }
+  
+   Seleciona um elemento do DOM com base no seletor CSS fornecido.
+   Retorna `null` se o elemento não for encontrado.
+
+ 2. Criar e Adicionar Tarefas
+ Função `criaLi`:
+  function criaLi(){
+      const li = document.createElement('li');
+      return li;
+  }
+  
+   Cria um novo elemento `<li>`.
+
+ Função `criaTarefas`:
+  function criaTarefas(textoinput){
+      const li = criaLi();
+      li.innerText = textoinput;
+      tarefas.appendChild(li);
+      limpaImput();
+      criaBotaoApagar(li);
+      salvarTarefas();
+  }
+  
+   Cria um novo `<li>`, define seu texto, adiciona ao DOM, limpa o input, cria o botão "Apagar" e salva a tarefa.
+
+ Função `criaBotaoApagar`:
+  function criaBotaoApagar(li){
+      li.innerText += ' ';
+      const botaoApagar = document.createElement('button');
+      botaoApagar.innerText = 'Apagar';
+      botaoApagar.setAttribute('class', 'apagar');
+      botaoApagar.setAttribute('title', 'apagar esta tarefa');
+      li.appendChild(botaoApagar);
+  }
+  
+   Cria um botão "Apagar" e o adiciona ao `<li>`.
+
+ 3. Limpar e Focar no Input
+ Função `limpaImput`:
+  function limpaImput(){
+      inputTarefa.value = '';
+      inputTarefa.focus();
+  }
+  
+   Limpa o campo de input e coloca o foco nele.
+
+ 4. Adicionar Eventos
+ Adicionar Tarefa com Enter:
+  inputTarefa.addEventListener('keypress', (e)=>{
+      if(e.keyCode === 13){
+          if(!inputTarefa.value) return;
+          criaTarefas(inputTarefa.value);
+      }
+  });
+  
+   Adiciona uma tarefa ao pressionar a tecla Enter.
+
+ Adicionar Tarefa com Clique:
+  btonTarefa.addEventListener('click', ()=>{
+      if(!inputTarefa.value) return;
+      criaTarefas(inputTarefa.value);
+  });
+  
+   Adiciona uma tarefa ao clicar no botão.
+
+ Remover Tarefa:
+  document.addEventListener('click', (e)=>{
+      const el = e.target;
+      if(el.classList.contains('apagar')){
+          el.parentElement.remove();
+      }
+  });
+  
+   Remove a tarefa ao clicar no botão "Apagar".
+
+ 5. Salvar e Recuperar Tarefas no Local Storage
+ Função `salvarTarefas`:
+  function salvarTarefas(){
+      const liTarefas = tarefas.querySelectorAll('li');
+      const listaTarefas = [];
+
+      for (let tarefa of liTarefas){
+          let tarefaTexto = tarefa.innerText;
+          tarefaTexto = tarefaTexto.replace('Apagar', '').trim();
+          listaTarefas.push(tarefaTexto);
+      }
+
+      const tarefasJSON = JSON.stringify(listaTarefas);
+      localStorage.setItem('tarefas', tarefasJSON);
+  }
+  
+   Salva as tarefas no Local Storage em formato JSON.
+
+ Função `addTarefasSalvas`:
+  function addTarefasSalvas(){
+      const tarefas = localStorage.getItem('tarefas');
+      const listaTarefas = JSON.parse(tarefas);
+      for(let tarefa of listaTarefas){
+          criaTarefas(tarefa);
+      }
+  }
+  
+   Recupera as tarefas do Local Storage e as adiciona ao DOM.
+
+ 6. Inicialização
+ Chamar `addTarefasSalvas` ao Carregar a Página:
+  addTarefasSalvas();
+  
+   Garante que as tarefas salvas sejam carregadas ao iniciar a página.
+
+
+
+
+
+ 1. Selecionar Elementos do DOM
+- Função `tag`: 
+  - Propósito: Facilitar a seleção de elementos HTML usando seletores CSS.
+  - Uso: Você passa um seletor CSS (como uma classe ou ID) para a função, que retorna o elemento correspondente. Se o elemento não for encontrado, retorna `null`.
+
+ 2. Criar e Adicionar Tarefas
+- Função `criaLi`:
+  - Propósito: Criar um novo elemento de lista (`<li>`).
+  - Uso: Utilizada para gerar novos itens de tarefas dinamicamente.
+
+- Função `criaTarefas`:
+  - Propósito: Adicionar uma nova tarefa à lista de tarefas.
+  - Uso: Cria um novo `<li>`, define o texto da tarefa, adiciona o item à lista no DOM, limpa o campo de input, cria um botão "Apagar" para a tarefa e salva a tarefa no armazenamento local.
+
+- Função `criaBotaoApagar`:
+  - Propósito: Criar e adicionar um botão "Apagar" a cada item de tarefa.
+  - Uso: Cada `<li>` de tarefa recebe um botão que permite ao usuário remover a tarefa.
+
+ 3. Limpar e Focar no Input
+- Função `limpaImput`:
+  - Propósito: Limpar o campo de input e focar novamente nele.
+  - Uso: Após adicionar uma tarefa, essa função limpa o texto no input e coloca o foco nele para facilitar a adição de novas tarefas.
+
+ 4. Adicionar Eventos
+- Adicionar Tarefa com Enter:
+  - Propósito: Permitir ao usuário adicionar uma tarefa ao pressionar a tecla Enter.
+  - Uso: Monitora o campo de input e adiciona a tarefa quando o usuário pressiona Enter.
+
+- Adicionar Tarefa com Clique:
+  - Propósito: Permitir ao usuário adicionar uma tarefa ao clicar em um botão.
+  - Uso: Monitora o botão de adicionar tarefa e, quando clicado, adiciona a tarefa à lista.
+
+- Remover Tarefa:
+  - Propósito: Permitir ao usuário remover uma tarefa clicando no botão "Apagar".
+  - Uso: Monitora cliques em todo o documento e, se um botão "Apagar" for clicado, remove a tarefa correspondente.
+
+ 5. Salvar e Recuperar Tarefas no Local Storage
+- Função `salvarTarefas`:
+  - Propósito: Salvar a lista de tarefas no armazenamento local do navegador.
+  - Uso: Converte a lista de tarefas em um formato JSON e a salva no Local Storage. Isso permite que as tarefas persistam mesmo após recarregar a página.
+
+- Função `addTarefasSalvas`:
+  - Propósito: Carregar as tarefas salvas no armazenamento local e adicioná-las ao DOM.
+  - Uso: Recupera a lista de tarefas do Local Storage e recria cada tarefa na página ao carregar.
+
+ 6. Inicialização
+- Chamar `addTarefasSalvas` ao Carregar a Página:
+  - Propósito: Garantir que as tarefas salvas anteriormente sejam exibidas quando a página é carregada.
+  - Uso: Ao carregar a página, a função é chamada para recuperar e exibir todas as tarefas salvas no Local Storage.
+
+---
+
