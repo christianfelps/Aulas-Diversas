@@ -1,11 +1,13 @@
 class Pessoa {
     constructor(nome, sobrenome){
         this.nome = nome;
-        this.sobrenome =sobrenome
+        this.sobrenome =sobrenome;
     }
 }
 
 // consigo exportar varias coisas
 // module.exports = {nome, Pessoa}
 // Consigo exxportar uma coisa de cada vez
-exports.Pessoa = Pessoa
+this.qualquerCoisa = 'Qualquer coisa'
+exports.Pessoa = Pessoa;
+console.log(exports)

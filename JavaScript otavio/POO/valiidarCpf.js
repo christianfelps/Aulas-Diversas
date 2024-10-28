@@ -46,6 +46,8 @@ class CPF {
     return sequencia === this.cpfLimpo;
 }
 }
+
+// Instancia da classe
 const cpf = new CPF('50219327807')
 console.log(cpf.validaCPF())
 cpf.mudarCpf = '19327824511'

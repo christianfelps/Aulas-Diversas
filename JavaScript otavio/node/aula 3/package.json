@@ -1,7 +1,6 @@
 {
   "name": "aula-3",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +8,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "express": "^4.19.2"
+  "description": "",
+  "dependencies": {
+    "express": "2.5.11"
   }
 }
